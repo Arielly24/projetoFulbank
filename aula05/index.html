@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento salarial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="POST" action="projeto.php">
+        <h1>Aumento salarial</h1>
+        <label for="nome" >Nome do funcionário:</label>
+        <input id="nome" name="nome" required/>
+
+        <label for="salario">Salário atual:</label>
+        <input id="salario" name="salario" required/>
+
+        <label for="genero">Gênero:</label>
+        <div class="input-radio"> 
+            <input type="radio" name="genero" value="Feminino"/> 
+            <label for="feminino">Feminino</label>
+        </div>
+        <div class="input-radio"> 
+            
+            <input type="radio" name="genero" value="Masculino"/> 
+            <label for="maculino">Masculino</label>
+        </div>
+        <div class="input-radio"> 
+            <input type="radio" name="genero" value="Outro"/> 
+            <label for="outro">Outro</label>
+        </div>
+
+            <label for="cargo">Cargo</label>
+
+        <select name="cargos" id="cargos">
+            <option value="diretor">Diretor</option>
+            <option value="gerente">Gerente</option>
+            <option value="analista">Analista</option>
+            <option value="desenvolvedor">Desenvolvedor</option>
+            <option value="executivo">Diretor Executivo</option>
+
+        </select>
+
+        <button>Gerar Aumento</button>
+    </form>
+</body>
+</html>
